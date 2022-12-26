@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon"/>
   </head>
   <body>
 
@@ -40,5 +41,24 @@
 
     <script src="KeyPressListener.js"></script>
     <script src="app.js"></script>
+
+     <!-- Add a placeholder for the Twitch embed -->
+     <div class = "twitch-embed" id="twitch-embed">
+
+     <!-- Load the Twitch embed JavaScript file -->
+     <script src="https://embed.twitch.tv/embed/v1.js"></script>
+ 
+     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+     <script type="text/javascript">
+       new Twitch.Embed("twitch-embed", {
+         width: 800,
+         height: 400,
+         channel: "dracomatis",
+         allowfullscreen: false,
+         autoplay: true,
+         layout: "video",
+       });
+     </script>
+     </div>
   </body>
 </html>

@@ -14,7 +14,9 @@
   }
   
   .game-container { 
-    position: relative;
+    z-index: 1;
+    position: absolute;
+    top: 516px;
     width: 240px;
     height: 208px;
     background: url(images/map.png) no-repeat no-repeat;
@@ -22,6 +24,11 @@
     image-rendering: pixelated;
   }
   
+  .twitch-embed{
+    position: absolute;
+    top: 100px;
+  }
+
   .player-info {
     position: absolute;
     top: 0;
